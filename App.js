@@ -1,11 +1,51 @@
 
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import Loading from "./src/load/Loading"
+import { StyleSheet, Text, View, Image, Button } from 'react-native';
+
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>test1111</Text>
+      <Text style={styles.textTitle}>옹골찬 영화 리터러시 영화연구회</Text>
+      <View style={{marginBottom: 20}}>
+        <Image
+          style={styles.cardImage}
+          source={require('./assets/images/bg001.png')}
+        />
+      </View>
+      <View style={styles.buttonView}>
+        <View style={{width: 100}}>
+          <Button
+            title="들어가며"
+          />
+        </View>
+        <View style={{width: 50}}>
+
+        </View>
+        <View>
+          <Button
+            title="학습시작"
+          />
+        </View>
+      </View>
+
+      <View style={styles.textView}>
+        <Text>SDGs 라이브러리</Text>
+      </View>
+      <View style={styles.buttonView}>
+        <View style={{width: 100}}>
+          <Button
+            title="소개"
+          />
+        </View>
+        <View style={{width: 50}}>
+
+        </View>
+        <View>
+          <Button
+            title="라이브러리"
+          />
+        </View>
+      </View>
     </View>
   );
 }
@@ -13,8 +53,28 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    marginTop: 50,
+    alignItems: "center"
   },
+  textTitle: {
+    fontSize: 20,
+    marginTop: 30,
+    alignItems: "center"
+  },
+  cardImage: {
+    alignItems: "center",
+    width: 120,
+    height: 140,
+    marginTop: 50,
+  },
+  buttonView: {
+    flexDirection: "row",
+    justifyContent: "space-around"
+  },
+  textView: {
+    fontSize: 20,
+    marginTop: 40,
+    marginBottom: 20
+  },
+
 });
