@@ -15,7 +15,7 @@ const MovieNavigator = createStackNavigator(
   },
   {
     defaultNavigationOptions: {
-      headerTitle: 'A Screen',
+      headerTitle: '옹골찬 영화 연구회',
     },
   }
 );

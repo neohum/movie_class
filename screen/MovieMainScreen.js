@@ -5,7 +5,7 @@ import { View, Text, StyleSheet, Button, Image } from 'react-native';
 const MovieMainScreen = (props) => {
   return (
     <View style={styles.container}>
-    <Text style={styles.textTitle}>옹골찬 영화 리터러시 영화연구회</Text>
+    <Text style={styles.textTitle}>영화 튜토리얼</Text>
     <View style={{marginBottom: 20}}>
       <Image
         style={styles.cardImage}
@@ -34,8 +34,8 @@ const MovieMainScreen = (props) => {
       </View>
     </View>
 
-    <View style={styles.textView}>
-      <Text>SDGs 라이브러리</Text>
+    <View>
+      <Text style={styles.textView}>SDGs 라이브러리</Text>
     </View>
     <View style={styles.buttonView}>
       <View style={{width: 100}}>
@@ -57,6 +57,10 @@ const MovieMainScreen = (props) => {
   );
 };
 
+MovieMainScreen.navigationOptions = {
+  headerTitle: '옹골찬 영화 연구회',
+}
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -67,7 +71,7 @@ const styles = StyleSheet.create({
     fontSize: 30,
     marginTop: 30,
     alignItems: "center",
-    fontFamily: 'neodgm'
+    fontFamily: "neodgm"
   },
   cardImage: {
     alignItems: "center",
@@ -80,9 +84,10 @@ const styles = StyleSheet.create({
     justifyContent: "space-around"
   },
   textView: {
-    fontSize: 20,
+    fontSize: 30,
     marginTop: 40,
-    marginBottom: 20
+    marginBottom: 20,
+    fontFamily: "neodgm"
   },
 });
 
