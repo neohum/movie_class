@@ -30,6 +30,11 @@ const MovieMainScreen = (props) => {
       <View>
         <Button
           title="학습시작"
+          onPress={() => {
+            props.navigation.navigate({
+              routeName: 'TutorialMain',
+            });
+          }}
         />
       </View>
     </View>
@@ -41,6 +46,11 @@ const MovieMainScreen = (props) => {
       <View style={{width: 100}}>
         <Button
           title="소개"
+          onPress={() => {
+            props.navigation.navigate({
+              routeName: 'SdgsIntro',
+            });
+          }}
         />
       </View>
       <View style={{width: 50}}>
