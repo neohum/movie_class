@@ -24,7 +24,7 @@ const MovieMainScreen = (props) => {
         />
       </View>
 
-      <View style={{width: 50}}>
+      <View style={{width: 50, height: 50}}>
 
       </View>
       <View>
@@ -39,8 +39,18 @@ const MovieMainScreen = (props) => {
       </View>
     </View>
 
+    <View style={{width: 50, height: 20}}>
+
+    </View>
+
     <View>
-      <Text style={styles.textView}>SDGs 라이브러리</Text>
+      <Text style={styles.textView2}>SDGs 라이브러리</Text>
+      <View style={{marginBottom: 20, }}>
+        <Image
+          style={styles.cardImage2}
+          source={require('../assets/images/sdgsSimbol.png')}
+        />
+      </View>
     </View>
     <View style={styles.buttonView}>
       <View style={{width: 100}}>
@@ -74,12 +84,12 @@ MovieMainScreen.navigationOptions = {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginTop: 50,
+    marginTop: 10,
     alignItems: "center"
   },
   textTitle: {
     fontSize: 30,
-    marginTop: 30,
+    marginTop: 10,
     alignItems: "center",
     fontFamily: "neodgm"
   },
@@ -89,16 +99,28 @@ const styles = StyleSheet.create({
     height: 140,
     marginTop: 50,
   },
+  cardImage2: {
+    alignItems: "center",
+    width: "80%",
+    height: 140,
+    marginTop: 50,
+  },
   buttonView: {
     flexDirection: "row",
     justifyContent: "space-around"
   },
   textView: {
     fontSize: 30,
-    marginTop: 40,
+    marginTop: 20,
     marginBottom: 20,
     fontFamily: "neodgm"
   },
+  textView2: {
+    fontSize: 30,
+    marginTop: 30,
+    marginBottom: 0,
+    fontFamily: "neodgm"
+  }
 });
 
 export default MovieMainScreen;
