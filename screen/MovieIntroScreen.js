@@ -46,8 +46,8 @@ const MovieIntroScreen = (props) => {
   );
 };
 
-MovieMainScreen.navigationOptions = {
-  headerTitle: '옹골찬 영화 연구회',
+MovieIntroScreen.navigationOptions = {
+  headerTitle: 'back',
 }
 
 const styles = StyleSheet.create({
